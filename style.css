@@ -40,3 +40,82 @@ body.dark{--bg:#0b1220;--card:#0f1724;--muted:#9aa4b2;--accent:#58a6ff;--text:#e
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: 1em;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pdf-slide {
+  min-width: 100%;
+  text-align: center;
+  padding: 2em 1em;
+  background: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.pdf-slide:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.pdf-slide img.pdf-thumb {
+  width: 120px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 1em;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: transform 0.3s;
+}
+
+.pdf-slide img.pdf-thumb:hover {
+  transform: scale(1.1);
+}
+
+.pdf-slide canvas {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.pdf-slide:hover canvas {
+  transform: scale(1.05);
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+.prev { left: 15px; }
+.next { right: 15px; }
+
+@media screen and (max-width: 768px) {
+  .pdf-slide img.pdf-thumb {
+    width: 100px;
+    height: 120px;
+  }
+}

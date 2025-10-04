@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-wassim_karouia",
+  "version": "1.0.0",
+  "description": "Ce dossier contient un portfolio statique (HTML/CSS/JS) prêt à ouvrir dans **VS Code**.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarouiaWassim/portfolio-wassim-modifyed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarouiaWassim/portfolio-wassim-modifyed/issues"
+  },
+  "homepage": "https://github.com/KarouiaWassim/portfolio-wassim-modifyed#readme",
+  "dependencies": {
+    "firebase": "^12.3.0"
+  }
+}
